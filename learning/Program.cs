@@ -17,6 +17,8 @@ namespace LearningC
         {
             var p = new Program();
             p.names();
+
+            p.reverseNumbers();
         }
 
         public void names()
@@ -40,6 +42,13 @@ namespace LearningC
             }
             
             Console.WriteLine(string.Join(", ", names));
+            
+            
+        }
+
+        public reverseNumbers()
+        {
+            
         }
     }
 }
