@@ -8,17 +8,30 @@ using System;
 
 namespace LearningC
 {
+
+    /// The Program class serves as the entry point for the application and contains methods to process and display arrays.
     class Program
     {
+        /// Represents an integer used within the Program class.
+        /// This variable is initialized to 9 and can be used for various
+        /// integer operations or as part of the logic within the class.
         private int i = 9;
+        
+        /// A variable that provides an instance of the Random class.
         private Random random = new Random();
 
+        /// This is the entry point for the application.
+        /// <param name="args">Command-line arguments.</param>
         static void Main(string[] args)
         {
             var p = new Program();
             p.names();
         }
 
+        /// <summary>
+        /// Prompts the user to enter three names, replaces the existing names in the array with the input names,
+        /// and then outputs both the original integer array and the newly input names.
+        /// </summary>
         public void names()
         {
             int[] numbers = { 10, 20, 30, 40, 50 };
